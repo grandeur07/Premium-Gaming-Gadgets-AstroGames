@@ -91,11 +91,7 @@ const { addToCart,removeFromCart, cart } = useContext(CartContext)
 
 const [toast, setToast] = useState("")
 
-{toast && (
-  <div className="alert alert-success text-center">
-    {toast}
-  </div>
-)}
+
 
 const isInCart = (id) => {
   return cart.some(item => item.product_id === id)
@@ -103,6 +99,7 @@ const isInCart = (id) => {
 
   return (
     <div className='text-center'>
+      
        {/* cart icon */}
         <div className="d-flex justify-content-end p-2">
         <button className="cartbutton position-relative" onClick={() => navigate("/cart")}>
@@ -122,19 +119,19 @@ const isInCart = (id) => {
               
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src={blackops7} className="d-block w-100 hero-img" />
+                  <img src={blackops7} className="d-block w-100 hero-img " alt='cod black ops' />
                 </div>
 
                 <div className="carousel-item">
-                  <img src={fc26} className="d-block w-100 hero-img" />
+                  <img src={fc26} className="d-block w-100 hero-img" alt='eafc26' />
                 </div>
 
                 <div className="carousel-item">
-                  <img src={gta6} className="d-block w-100 hero-img" />
+                  <img src={gta6} className="d-block w-100 hero-img" alt='rockstar games'/>
                 </div>
 
                 <div className="carousel-item">
-                  <img src={ps5prwallpaper2} className="d-block w-100 hero-img" />
+                  <img src={ps5prwallpaper2} className="d-block w-100 hero-img" alt='ps5 wallpaper'/>
                 </div>
 
                 <div className="carousel-item">
@@ -168,7 +165,7 @@ const isInCart = (id) => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-        </div>
+        </div> 
       </div>
       
 

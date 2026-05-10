@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "../styles/Signin.css";
 
 
@@ -16,8 +16,6 @@ const Signin = () => {
   const[success,setSuccess] = useState("")
 
 
-  // Navigation
-  const navigate = useNavigate()
   // Function to sign in
 const handleSignin = async(e) =>{
   e.preventDefault()

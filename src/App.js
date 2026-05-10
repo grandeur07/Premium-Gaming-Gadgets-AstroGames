@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom'
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Addgadget from './components/Addgadget';
