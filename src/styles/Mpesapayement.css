@@ -1,0 +1,86 @@
+.mpesa-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* TITLE */
+.mpesa-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.mpesa-card {
+  width: 380px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+}
+
+/* PRODUCT IMAGE */
+.mpesa-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* PRODUCT NAME */
+.mpesa-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* PRICE */
+.mpesa-price {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* INPUT */
+.mpesa-card input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.mpesa-btn {
+  width: 100%;
+  padding: 10px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mpesa-btn:hover {
+  background: #333;
+}
+
+/* MESSAGES */
+.success-msg {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

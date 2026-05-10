@@ -1,0 +1,231 @@
+.cartbutton {
+  background-color: #ff3c00 ;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 9px; /* pill shape */
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carousel-hover {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-hover:hover {
+transform: scale(1.005);
+transition: 0.25s ease;
+}
+
+.carousel-hover .carousel-item img {
+transition: transform 0.4s ease;
+}
+
+.carousel-hover:hover .carousel-item.active img {
+transform: scale(1.03);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+transition: 0.3s ease;
+}
+
+.carousel-hover:hover .carousel-control-prev-icon,
+.carousel-hover:hover .carousel-control-next-icon {
+filter: brightness(1.2);
+}
+.hero-section {
+position: relative;
+}
+
+.hero-img {
+height: 70vh;
+object-fit: cover;
+}
+
+.hero-overlay {
+position: absolute;
+top: 50%;
+left: 10%;
+transform: translateY(-50%);
+color: white;
+max-width: 500px;
+}
+
+.hero-overlay h1 {
+font-size: 3rem;
+font-weight: bold;
+}
+
+.hero-overlay p {
+margin: 10px 0 20px;
+font-size: 1.2rem;
+}
+.hero-section {
+  position: relative;
+}
+
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* 🔥 DARK OVERLAY (this is the key fix) */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55); /* controls darkness */
+  z-index: 1;
+}
+
+/* text layer above overlay */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* 🔥 make text pop */
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+  margin-bottom: 20px;
+}
+
+.cartbutton {
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  /* ADD TO CART (orange gradient) */
+  .cartbutton.add {
+    background: linear-gradient(135deg, #ff3c00, #ff7a00);
+    box-shadow: 0 4px 10px rgba(255, 60, 0, 0.3);
+  }
+
+  .cartbutton.add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 60, 0, 0.5);
+  }
+
+  /* REMOVE FROM CART (red) */
+  .cartbutton.remove {
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+  }
+
+  .cartbutton.remove:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(220, 53, 69, 0.5);
+  }
+
+  /* Click effect */
+  .cartbutton:active {
+    transform: scale(0.97);
+  }
+
+.product-card {
+  transition: all 0.25s ease;
+  border-radius: 12px;
+  
+}
+
+/*  subtle hover */
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* very light image effect */
+.product-card img {
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.02);
+}
+
+.category-tile {
+  position: relative;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* IMAGE */
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* DARK OVERLAY (like your carousel hero) */
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+/* TEXT ON TOP */
+.category-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* HOVER EFFECT */
+.category-tile:hover {
+  transform: scale(1.03);
+}
+
+.category-tile:hover .category-img {
+  transform: scale(1.08);
+}
+
+/* ACTIVE CATEGORY */
+.active-cat .category-overlay {
+  background: rgba(221, 182, 170, 0.45);
+}
+
+.active-cat .category-text {
+  color: #fff;
+} 
+
+.main-product-img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 200px;
+}
