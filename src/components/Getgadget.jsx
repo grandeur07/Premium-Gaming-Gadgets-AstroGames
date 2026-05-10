@@ -99,6 +99,12 @@ const isInCart = (id) => {
 
   return (
     <div className='text-center'>
+
+      {toast && (
+        <div className="alert alert-success text-center m-3">
+          {toast}
+        </div>
+      )}
       
        {/* cart icon */}
         <div className="d-flex justify-content-end p-2">
@@ -135,7 +141,7 @@ const isInCart = (id) => {
                 </div>
 
                 <div className="carousel-item">
-                  <img src={psplus} className="d-block w-100 hero-img" />
+                  <img src={psplus} className="d-block w-100 hero-img" alt='playstation plus'/>
                 </div>
               </div>
 
