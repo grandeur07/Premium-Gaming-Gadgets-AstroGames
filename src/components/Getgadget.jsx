@@ -13,6 +13,7 @@ import Controllers from '../images/Controllers.jpg'
 import GamingConsole from '../images/GamingConsole.jpg'
 import OtherAccessory from '../images/OtherAccessory.jpg'
 import PS4Games from '../images/PS4Games.jpg'
+import GadgetChatbot from "./GetChatbot";
 
 import "../styles/Getgadget.css";
 
@@ -276,6 +277,8 @@ const isInCart = (id) => {
           </div>
         ))}
       </div>
+
+        <GadgetChatbot products={products} />
 
     </div>
   )
